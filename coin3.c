@@ -11,7 +11,7 @@ unsigned long getCoin(unsigned long x)
 		if(a[x]!=0)
 			return a[x];
 	
-		int result=getCoin(x/2)+getCoin(x/3)+getCoin(x/4);
+		unsigned long result=getCoin(x/2)+getCoin(x/3)+getCoin(x/4);
 		if(x<1000000000)
 			if(a[x]==0)
 				a[x]=result;
