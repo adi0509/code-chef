@@ -1,5 +1,5 @@
 #include<stdio.h>
-//using namespace std;
+
 static unsigned long a[1000000000]={0}; //this line will initialise full array with 0.
 unsigned long getCoin(unsigned long x)
 {
@@ -21,7 +21,7 @@ unsigned long getCoin(unsigned long x)
 int  main()
 {
 	unsigned long x;
-	while(true)
+	while(1)
 	{
 		scanf("%lu",&x);
 		if(x>0 && x<1000000000)
