@@ -1,0 +1,17 @@
+t = int(input())
+for i in range(t):
+    get = 0
+    n = int(input())
+    a = list(map(int, input().split()))
+    for k in range(n-1, -1,-1):
+        for l in range(k-1, -1 , -1):
+            if a[k]!=a[l]:
+                if a[a[k]-1]==a[a[l]-1]:
+                    get=1
+                    break
+        if get!=0:
+            break
+    if get==0:
+        print("Poor Chef")
+    else:
+        print("Truly Happy")
